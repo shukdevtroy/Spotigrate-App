@@ -47,40 +47,18 @@ No Spotify API credentials needed. No OAuth setup. Just Chrome and Spotify.
 
 ## Screenshots
 
-> _Add screenshots of the main app, login screen, and song picker here_
+<img width="1915" height="996" alt="image" src="https://github.com/user-attachments/assets/21c4cffb-f547-4d9a-8e01-4de91c20aad0" />
 
 ---
 
 ## Installation
 
-### Option A — Download the EXE (recommended)
+### Download the EXE (recommended)
 
-1. Go to the [Releases](../../releases) page
-2. Download `Spotigrate.exe`
-3. Double-click to run — no Python or dependencies required
+1. [Download Spotigrate.exe from Google Drive](https://drive.google.com/file/d/1NcpwfdnSweziVNB4kVsxEM6Ih80M9XPY/view?usp=sharing)
+2. Double-click to run — no Python or dependencies required
 
 > Windows may show a "Windows protected your PC" popup. Click **More info → Run anyway**. This is normal for unsigned applications.
-
-### Option B — Run from source
-
-**Requirements:** Python 3.9+, Google Chrome
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/spotigrate.git
-cd spotigrate
-
-# Install dependencies
-pip install customtkinter playwright cryptography
-
-# Install Playwright browser
-python -m playwright install chromium
-
-# Run the app
-python spotigrate_auth.py
-```
-
-> ⚠️ Always run `spotigrate_auth.py` — not `spotigrate_gui.py` directly.
 
 ---
 
@@ -152,26 +130,6 @@ Logout    →  Clears session, shows login on next launch
 
 ---
 
-## Building the EXE yourself
-
-Make sure you have both source files in the same folder, then run:
-
-```bash
-pip install pyinstaller cryptography
-
-pyinstaller --onefile --windowed --name "Spotigrate" \
-  --collect-all playwright \
-  --collect-all customtkinter \
-  --add-data "spotigrate_gui.py;." \
-  spotigrate_auth.py
-```
-
-The output EXE will be at `dist\Spotigrate.exe`.
-
-> The `build\` folder and `Spotigrate.spec` file are only needed if you want to rebuild. Only the EXE needs to be distributed.
-
----
-
 ## How it Works
 
 Spotigrate uses **Playwright** to connect to a Google Chrome instance running with a remote debugging port. It reads and interacts with the Spotify web player exactly as a human would — scrolling through your library, right-clicking songs, and selecting playlists from the context menu.
@@ -181,17 +139,6 @@ Spotigrate ──(CDP)──► Chrome ──(web)──► Spotify
 ```
 
 No Spotify API keys. No rate-limit tokens. No OAuth. Just browser automation.
-
----
-
-## Project Structure
-
-```
-spotigrate/
-├── spotigrate_auth.py     # Auth launcher — register, login, session management
-├── spotigrate_gui.py      # Main application — migrate, delete, log, Chrome control
-└── README.md
-```
 
 ---
 
@@ -254,8 +201,15 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-<div align="center">
+## Contact
 
-Built with ♫ using Python · Playwright · CustomTkinter
+For any questions or issues, please contact:
 
-</div>
+- **Email**: [Click to here send email](https://mail.google.com/mail/?view=cm&fs=1&to=shukdevdatta@gmail.com)
+- **GitHub**: [Click to here to access the Github Profile](https://github.com/shukdevtroy)
+- **WhatsApp**: [Click here to chat](https://wa.me/+8801719296601)
+- **HuggingFace Profile**: [Click to here to access the HuggingFace Profile](https://huggingface.co/shukdevdatta123))
+- **HuggingFace Profile**: [Click to here to access the 2nd HuggingFace Profile](https://huggingface.co/shukdevdattaEX))
+- **HuggingFace Profile**: [Click to here to access the 3rd HuggingFace Profile](https://huggingface.co/shukdev3))
+
+---
