@@ -13,6 +13,9 @@ A desktop automation app built with Python, Playwright, and CustomTkinter.
 </div>
 
 ---
+## Official Website Link
+
+[Spotigrate Official Website](https://shukdevtroy.github.io/Spotigrate-App/)
 
 ## What is Spotigrate?
 
