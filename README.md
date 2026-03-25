@@ -58,7 +58,7 @@ No Spotify API credentials needed. No OAuth setup. Just Chrome and Spotify.
 
 ### Download the EXE (recommended)
 
-1. [Download Spotigrate.exe from Google Drive](https://drive.google.com/file/d/1CcGWRaGerlxyhrC6RckFm9vjPtxWAxMA/view?usp=sharing)
+1. [Download Spotigrate.exe from Google Drive](https://drive.google.com/file/d/1_by7ooXX4NFoXOPWkWu8MaUYrNb3Ua4D/view?usp=sharing)
 2. Double-click to run — no Python or dependencies required
 
 > Windows may show a "Windows protected your PC" popup. Click **More info → Run anyway**. This is normal for unsigned applications.
