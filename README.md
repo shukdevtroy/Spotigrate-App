@@ -57,7 +57,6 @@ No Spotify API credentials needed. No OAuth setup. Just Chrome and Spotify.
 <p align="center">
   ▶️ Click to watch
 </p>
----
 
 ## Installation
 
