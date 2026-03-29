@@ -48,10 +48,15 @@ No Spotify API credentials needed. No OAuth setup. Just Chrome and Spotify.
 
 ---
 
-## Screenshots
-
-<img width="1915" height="996" alt="image" src="https://github.com/user-attachments/assets/21c4cffb-f547-4d9a-8e01-4de91c20aad0" />
-
+## Demo:
+<p align="center">
+  <a href="https://youtu.be/01zWczzkNjc">
+    <img src="https://github.com/user-attachments/assets/21c4cffb-f547-4d9a-8e01-4de91c20aad0" width="600">
+  </a>
+</p>
+<p align="center">
+  ▶️ Click to watch
+</p>
 ---
 
 ## Installation
