@@ -2205,6 +2205,166 @@
   </div>
 </footer>
 
+<!-- ═══ FLOATING CONTACT BUTTONS ══════════════════════════════════════ -->
+<div class="floating-contact">
+  <!-- Gmail Button -->
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shukdevdatta@gmail.com"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="float-btn float-gmail"
+     aria-label="Send Email via Gmail">
+    <span class="float-btn-tooltip">Send me an email</span>
+    <svg class="btn-icon" viewBox="0 52 88 66" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+      <path fill="#4285F4" d="M58 108H30V75L4 55V112c0 3.3 2.7 6 6 6h72c3.3 0 6-2.7 6-6V55L62 75z"/>
+      <path fill="#34A853" d="M62 108h26V55z"/>
+      <path fill="#FBBC04" d="M4 55v53l26-33z"/>
+      <path fill="#EA4335" d="M82 52H6L44 81z"/>
+      <path fill="#C5221F" d="M6 52l24 23h28L82 52z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+8801719296601"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="float-btn float-whatsapp"
+     aria-label="Chat on WhatsApp">
+    <span class="float-btn-tooltip">Chat on WhatsApp</span>
+    <svg class="btn-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+      <path fill="#fff" d="M24 4C12.955 4 4 12.955 4 24c0 3.637.978 7.046 2.684 9.979L4 44l10.298-2.652A19.915 19.915 0 0 0 24 44c11.045 0 20-8.955 20-20S35.045 4 24 4z"/>
+      <path fill="#25D366" d="M35.176 28.605c-.48-.241-2.84-1.403-3.28-1.563-.44-.16-.76-.241-1.08.241-.32.481-1.24 1.563-1.52 1.884-.28.32-.56.361-1.04.12-.48-.241-2.025-.747-3.857-2.384-1.426-1.273-2.388-2.845-2.668-3.326-.28-.481-.03-.742.21-.98.217-.215.48-.561.72-.842.24-.28.32-.481.48-.802.16-.32.08-.601-.04-.842-.12-.241-1.08-2.604-1.48-3.566-.39-.937-.787-.81-1.08-.825a19.37 19.37 0 0 0-.92-.017c-.32 0-.84.12-1.28.601-.44.481-1.68 1.643-1.68 4.006 0 2.364 1.72 4.648 1.96 4.969.24.32 3.387 5.172 8.207 7.252 1.147.495 2.042.79 2.74 1.012 1.152.367 2.2.315 3.028.19.924-.137 2.84-1.162 3.24-2.284.4-1.122.4-2.084.28-2.284-.12-.2-.44-.32-.92-.561z"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+  /* ── Floating Contact Buttons ────────────────────────────────────── */
+  .floating-contact {
+    position: fixed;
+    bottom: 32px;
+    left: 28px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .float-btn {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.3s ease;
+  }
+
+  .float-btn:nth-child(1) { animation: float-in 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s both, idle-bob 3s ease-in-out 1s infinite; }
+  .float-btn:nth-child(2) { animation: float-in 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.25s both, idle-bob 3s ease-in-out 1.4s infinite; }
+
+  @keyframes float-in {
+    from { opacity: 0; transform: scale(0) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  @keyframes idle-bob {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-6px); }
+  }
+
+  .float-btn:hover {
+    transform: scale(1.18) translateY(-3px) !important;
+    animation-play-state: paused !important;
+  }
+
+  /* Gmail */
+  .float-gmail {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(234,67,53,0.4), 0 2px 8px rgba(0,0,0,0.25);
+  }
+  .float-gmail:hover {
+    box-shadow: 0 8px 32px rgba(234,67,53,0.65), 0 4px 16px rgba(0,0,0,0.35);
+  }
+  .float-gmail::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 2px solid rgba(234,67,53,0.5);
+    animation: ring-pulse 2.2s ease-out 1.5s infinite;
+  }
+
+  /* WhatsApp */
+  .float-whatsapp {
+    background: #25D366;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.5), 0 2px 8px rgba(0,0,0,0.25);
+  }
+  .float-whatsapp:hover {
+    box-shadow: 0 8px 32px rgba(37,211,102,0.75), 0 4px 16px rgba(0,0,0,0.35);
+  }
+  .float-whatsapp::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 2px solid rgba(37,211,102,0.55);
+    animation: ring-pulse 2.2s ease-out 1.9s infinite;
+  }
+
+  @keyframes ring-pulse {
+    0%   { transform: scale(1);   opacity: 0.9; }
+    100% { transform: scale(1.7); opacity: 0; }
+  }
+
+  .btn-icon { display: block; flex-shrink: 0; }
+
+  /* Tooltip */
+  .float-btn-tooltip {
+    position: absolute;
+    left: calc(100% + 14px);
+    top: 50%;
+    transform: translateY(-50%) translateX(-8px);
+    background: rgba(15,15,15,0.93);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  }
+  .float-btn-tooltip::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: rgba(15,15,15,0.93);
+  }
+  .float-btn:hover .float-btn-tooltip {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+
+  @media (max-width: 480px) {
+    .floating-contact { bottom: 22px; left: 16px; }
+    .float-btn { width: 50px; height: 50px; }
+    .float-btn-tooltip { display: none; }
+  }
+</style>
+
 <script>
   // ── FAQ accordion ─────────────────────────────────────────────────
   function toggleFaq(btn) {
